@@ -22,9 +22,9 @@
                 <h3>Sistem Informasi Seminar Tugas Akhir - SISTA</h3>
             </div>
             <div class="container mt-5">
-                <a href="">Home</a> |
+                <a href="index.html">Home</a> |
                 <a href="">Jadwal</a> |
-                <a href="">Daftar Seminar</a> |
+                <a href="daftar_ta.html">Daftar Seminar</a> |
                 <a href="">Berita</a> |
                 <a href="">About</a>
                 <div class="card mt-3">
@@ -32,13 +32,13 @@
                         <h6>Pendaftaran Seminar berlaku untuk Mahasiswa yang telah mendapatkan persetujuan dari Pembimbing TA </h6>
                         <fieldset class="scheduler-border3">
                             <legend class="scheduler-border3">Form Peserta Seminar TA</legend>
-                            <form>
+                            <form name="dataseminar" method="post" onSubmit="validasi()">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group row">
                                             <label for="email" class="col-2 col-form-label">NIM :</label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="nim" id="nim">
                                             </div>
                                         </div>
                                     </div>
@@ -46,7 +46,7 @@
                                         <div class="form-group row">
                                             <label for="email" class="col-sm-2">Judul TA :</label>
                                             <div class="col-sm-10">
-                                                <textarea name="judul_ta" class="form-control" id="" rows="4"></textarea>
+                                                <textarea name="judul_ta" class="form-control" id="judul_ta" rows="4"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -57,7 +57,7 @@
                                         <div class="form-group row">
                                             <label for="staticEmail" class="col-sm-2 col-form-label">Nama :</label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="nama" id="nama">
                                             </div>
                                         </div>
                                     </div>
@@ -65,7 +65,7 @@
                                         <div class="form-group row">
                                             <label for="email" class=" col-sm-3 col-form-label">Seminar :</label>
                                             <div class="col-sm-8">
-                                                <select name="seminar" id="" class="form-control">
+                                                <select id="seminar" class="form-control" name="seminar">
                                                     <option value="">Proposal</option>
                                                     <option value="">Skripsi</option>
                                                     <option value="">Tugas Akhir</option>
@@ -79,7 +79,7 @@
                                         <div class="form-group row">
                                             <label for="staticEmail" class="col-sm-2 col-form-label">Prodi :</label>
                                             <div class="col-sm-8">
-                                                <select name="prodi" id="" class="form-control">
+                                                <select id="prodi" class="form-control" name="prodi">
                                                     <option>- Pilih Prodi -</option>
                                                     <option value="si">Sistem Informasi</option>
                                                     <option value="ti">Teknik Informatika</option>
@@ -91,7 +91,7 @@
                                         <div class="form-group row">
                                             <label for="email" class=" col-sm-3 col-form-label">Pembimbing :</label>
                                             <div class="col-sm-8">
-                                                <select name="seminar" id="" class="form-control">
+                                                <select id="pembimbing" class="form-control" name="pembimbing">
                                                     <option value="">Sirajul Munir, S.Si, M.Kom.</option>
                                                     <option value="">Sirajul Munir, S.Si, M.Kom.</option>
                                                 </select>
@@ -104,7 +104,7 @@
                                         <div class="form-group row">
                                             <label for="staticEmail" class="col-sm-4 col-form-label">Tanggal Seminar :</label>
                                             <div class="col-sm-6">
-                                                <input type="date" class="form-control">
+                                                <input type="date" class="form-control" name="tgl" id="tgl">
                                             </div>
                                         </div>
                                     </div>
@@ -112,7 +112,7 @@
                                         <div class="form-group row">
                                             <label for="email" class=" col-sm-3 col-form-label">Penguji 1 :</label>
                                             <div class="col-sm-8">
-                                                <select name="seminar" id="" class="form-control">
+                                                <select  id="penguji1" class="form-control" name="penguji1">
                                                     <option value="">Sirajul Munir, S.Si, M.Kom.</option>
                                                     <option value="">Sirajul Munir, S.Si, M.Kom.</option>
                                                 </select>
@@ -125,7 +125,7 @@
                                         <div class="form-group row">
                                             <label for="staticEmail" class="col-sm-3 col-form-label">Ruangan :</label>
                                             <div class="col-sm-7">
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="ruangan" id="ruangan">
                                             </div>
                                         </div>
                                     </div>
@@ -133,7 +133,7 @@
                                         <div class="form-group row">
                                             <label for="email" class=" col-sm-3 col-form-label">Penguji 2 :</label>
                                             <div class="col-sm-8">
-                                                <select name="seminar" id="" class="form-control">
+                                                <select id="penguji2" class="form-control" name="penguji2">
                                                     <option value="">Sirajul Munir, S.Si, M.Kom.</option>
                                                     <option value="">Sirajul Munir, S.Si, M.Kom.</option>
                                                 </select>
@@ -152,3 +152,6 @@
 
             </div>
         </div>
+    </div>
+</body>
+</html>

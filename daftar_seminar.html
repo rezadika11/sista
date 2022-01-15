@@ -31,7 +31,7 @@
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                             <li class="breadcrumb-item"><a href="#">Jadwal</a></li>
                             <li class="breadcrumb-item"><a href="detail_jadwal.html">Detail Jadwal</a></li>
-                            <li class="breadcrumb-item active">Daftar Peserta</li>
+                            <li class="breadcrumb-item active">Daftar Seminar</li>
                         </ol>
                     </div><!-- /.col -->
                 </div>
@@ -73,13 +73,13 @@
                         </div>
                         <fieldset class="scheduler-border2">
                             <legend class="scheduler-border2">Form Peserta Seminar</legend>
-                            <form>
+                            <form action="detail_jadwal.html" name="datapribadi" method="post">
                                 <div class="row">
                                     <div class="col-md-9">
                                         <div class="form-group row">
                                             <label for="email" class="col-sm-2 col-form-label">Email :</label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="email">
                                             </div>
                                         </div>
                                     </div>
@@ -93,7 +93,7 @@
                                         <div class="form-group row">
                                             <label for="staticEmail" class="col-sm-2 col-form-label">Nama :</label>
                                             <div class="col-sm-8">
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control" name="nama">
                                             </div>
                                         </div>
                                     </div>
@@ -106,7 +106,7 @@
                                         <div class="form-group row">
                                             <label for="staticEmail" class="col-sm-2 col-form-label">Prodi :</label>
                                             <div class="col-sm-8">
-                                                <select name="prodi" id="" class="form-control">
+                                                <select name="prodi" id="" class="form-control" name="prodi">
                                                     <option>- Pilih Prodi -</option>
                                                     <option value="si">Sistem Informasi</option>
                                                     <option value="ti">Teknik Informatika</option>
@@ -122,40 +122,32 @@
                                     <label for="staticEmail" class="col-sm-2 col-form-label">Program :</label>
                                     <div class="col-sm-10">
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+                                            <input type="radio" id="customRadioInline1" name="d3" class="custom-control-input">
                                             <label class="custom-control-label" for="customRadioInline1">D3</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+                                            <input type="radio" id="customRadioInline2" name="s1_reguler" class="custom-control-input">
                                             <label class="custom-control-label" for="customRadioInline2">S1 Reguler</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+                                            <input type="radio" id="customRadioInline2" name="s1_fast" class="custom-control-input">
                                             <label class="custom-control-label" for="customRadioInline2">S1 Fast Trackt</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+                                            <input type="radio" id="customRadioInline2" name="s2" class="custom-control-input">
                                             <label class="custom-control-label" for="customRadioInline2">S2</label>
                                         </div>
                                     </div>
                                 </div>
 
-
-
-
-
                             </form>
-
-
 
                         </fieldset>
                         <button type="submit" class="btn btn-primary">Daftar</button>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </div>
+        </div>
+        </body>
+        </html>
